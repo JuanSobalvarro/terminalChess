@@ -212,6 +212,7 @@ void __freeChessPieces(Piece** pieces, int size)
         free(pieces[i]->pos);
         free(pieces[i]);
     }
+    free(pieces);
 }
 
 void cleanChess(ChessBoard* cb)
